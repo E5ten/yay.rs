@@ -1,7 +1,7 @@
 # Maintainer: Morgan <morganamilo@archlinux.org>
 pkgname=yay.rs-git
 _pkgname=yay.rs
-pkgver=0.0.1.r3.4a1f723
+pkgver=0.0.1.r8.3f56ca4
 pkgrel=1
 pkgdesc='Rust port of yay'
 url='https://github.com/morganamilo/yay.rs'
@@ -21,7 +21,7 @@ build () {
   cd "$srcdir/$_pkgname"
 
   if pacman -T pacman-git > /dev/null; then
-    _features+="git,"
+    _features+="git,generate,"
   fi
 
   if [[ $(rustc -V) == *"nightly"* ]]; then

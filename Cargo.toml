@@ -11,7 +11,7 @@ raur = "3.0.1"
 raur-ext = "2.0.0"
 aur-fetch = "0.7.0"
 pacmanconf = "0.1.1"
-alpm = "0.10.1"
+alpm = "0.10.2"
 alpm-utils = "0.3.1"
 srcinfo = "1.0.0"
 aur-depends = "0.5.2"
@@ -45,3 +45,4 @@ lto = true
 [features]
 git = ["alpm/git", "alpm-utils/git", "aur-depends/git"]
 backtrace = []
+generate = ["alpm/generate"]
